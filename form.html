@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="fi">
+Username:
+<input type="text" name="" id="t1">
+<br>
+<br>
+Password:
+<input type="password" name="" id="t2">
+<br>
+<br>
+
+confirm Password:
+<input type="password" name="" id="t3">
+<br>
+<br>
+
+Age:
+<input type="number" name="" id="t4">
+<br>
+<br>
+<input type="button" value="Register" onclick="Validation()">
+<br>
+<br>
+<span id="a1"></span>
+<br>
+<br>
+
+     </form>
+     <script>
+        function Validation(){
+
+            var Uname=document.getElementById("t1").value;
+            var pwd=document.getElementById("t2").value;
+            var cpwd=document.getElementById("t3").value;
+            var age=document.getElementById("t4").value;
+            var phno=document.getElementById("t5").value;
+            var r= " ";
+
+            if(Uname.length==0){
+                r+= "Username cant be empty"+"<br>";
+
+            }
+
+            if(pwd.length==0){
+                r +="Password cannot be empty" +"<br>";
+
+            }
+
+            if(cpwd.length==0){
+                r +=" Confirm Password cannot be empty" +"<br>";
+
+            }
+            if(pwd!=cpwd){
+                r +="Password and confirm password do not match" +"<br>";
+            }
+            if(pwd.length<8 || pwd.length>15){
+                r +="Password lenght should be between 8  and 15" + "<br>";
+            }
+            if(age!=0){
+                r="Age cannot be empty" +"<br>";
+
+            }
+                if(age<18 || age>45){
+                 r +="age should be between 18 and 45" + "<br>";
+                }
+                                                                                                                                                                                                                                                                                                                                                                                                                        
+
+            if(phno.length!=0){
+                if(phno.length!=10){
+                    r +="Phone number should be of 10 digits" + "<br>"
+                }}
+                else{
+                    r +="Phone number cannot be empty" + "<br>"
+
+                }
+               documnet.getElementById("a1")
+
+            }
+
+            
+            
+            
+
+                
+
+     </script>
+</body>
+</html>

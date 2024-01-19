@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <P id="demo"></P>
+    <script>
+     //   try{
+       //     alert("Welcome to the world");
+        //}
+        //catch(er){
+          //  document.getElementById("demo").innerHTML=err.message;
+        //}
+
+        function myFunc(){
+            var a=100;
+            var b=0;
+            try{
+                if(b==0){
+                    throw("Divide by zero");
+                }else{
+                    var c=a/b;
+                    alert(c);
+
+                }
+            }
+            catch(e){
+                alert("error:"+ e)
+            }
+        }
+        myFunc()
+         </script>
+</body>
+</html>
